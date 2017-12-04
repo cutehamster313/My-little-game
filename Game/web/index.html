@@ -1,0 +1,20 @@
+<head>
+  <meta charset="utf-8">
+  <title>Захват замка</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/js.js"></script>
+</head>
+<body>
+  <canvas id="canvas" width="1000" height="600"  style="margin-left:260px; background: url('background.jpeg');display:none"></canvas>
+  <input type="text" name="lead_name" id="form-control" onchange="setName(this.value)" placeholder="* Ваше имя" required="">
+  <nav class="side-nav" id="start">
+    <a  class="side-nav-button" onclick="start()">Играть</a>
+    <a  class="side-nav-button" onclick="setLevel(0)">Уровень 1</a>
+    <a  class="side-nav-button" onclick="setLevel(1)">Уровень 2</a>
+    <a  class="side-nav-button" onclick="records('record')">Рекорды</a>
+  </nav>
+  <div id="rec"></div>
+  <div id="score" style="display:none">Результат: 0</div>  
+</body>
+</html>
+<!---->
